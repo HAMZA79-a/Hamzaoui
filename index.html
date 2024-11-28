@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .t{
+           
+
+        }
+        .heder{
+            height:350px;
+            width: 100%;
+            background-color: blueviolet;
+            overflow:hidden;
+            position: relative;
+            border-bottom: solid 9px #087;
+            
+            
+            
+
+        }
+        #im{
+            width: 100%;
+            position: relative;
+            bottom: 300px;
+        }
+        .cover{
+            position:absolute;
+            bottom:0;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        }
+        .menuh{
+            width: 100%;
+            height: 25px;
+            position: absolute;
+            margin-top: 25px;
+           
+            direction: rtl;
+            top:0;
+
+        }
+        .menu{
+            
+            margin-right: 10px;
+
+        }
+        .menu > .btn{
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 23px;
+            transition:background-color 1s;
+            
+        }
+
+        .menu > .btn:hover{
+            background-color:rgb(171, 165, 165) ;
+        }
+
+       .active{
+        background-color:#087;
+        
+       }
+       .main_cont{
+        position: relative;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:-270px
+       }
+       .img_frame{
+        border-radius: 50%;
+        width: 200px;
+        height:200px;
+        background-color: #087;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        box-shadow:0px 9px 8px rgb(215, 226, 225) ;
+        transition:padding 0.4s,border-shadow 0.4s;
+       }
+       
+       .img_frame > img{
+        
+        height: 100%;
+
+
+       }
+       .im_hov:hover{
+        padding: 15px;
+        box-shadow: 0px 9px 8px rgb(65, 88, 86);
+
+
+
+       }
+       .text{
+        color: white;
+        font-size:29px;
+        text-align: center;
+       }
+       .main_body{
+        position: relative;
+        top:-200px;
+       }
+       .main_body > .main_header{
+        text-align: center;
+        font-size: 18px;
+        color: rgb(173, 170, 170);
+
+       }
+       #feats,#courses{
+        direction: rtl;
+        display: flex;
+        justify-content:center;
+
+        
+        margin-top: 50px;
+       
+        
+
+
+       }
+       #feat,.course{
+        margin: 0px 50px;
+        background-color: rgb(235, 212, 184);
+        width: 300px;
+        text-align: center;
+        color: #087;
+       }
+       .course>img{
+        height: 100px;
+       }
+       .course{
+        background-color: transparent;
+        display: flex;
+        border:solid 1px #585858;
+        margin: 0px 8px;
+        border-radius: 10px;
+        width: 30%;
+        font-size: 13;
+        box-shadow: 0px 2px 8px rgb(219,219,219);
+
+       }
+       .course h2{
+        margin-right: 14px;
+        color: rgb(133, 127, 127);
+        font-weight: 500;
+       }
+
+       #courses_section{
+        margin-top: 150px;
+        background-color:rgb(235, 212, 184) ;
+       }
+       .course button{
+        background-color: #087;
+        border: none;
+        color: aliceblue;
+        height: 30px;
+        width: 90px;
+        box-shadow: 0px 2px 8px rgb(143,143,143);
+
+       }
+       #courses_section h1{
+        direction: rtl;
+        text-align: center;
+        font-weight: 500;
+        font-size: 40px;
+       }
+       #footer{
+        background-color: rgb(4, 113, 100);
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+       }
+       #footer h5{
+        font-weight: 400;
+       }
+
+    </style>
+</head>
+<body>
+    
+        <div class="t">
+            <div class="heder">
+                <img id="im" src="images/header.jpeg" alt="oups">
+                <div class="cover"></div>
+                <div class="menuh">
+                    <div class="menu">
+                        <a href="#" class="btn active">الرئيسية</a>
+                        <a href="#" class="btn">متطلبات</a>
+                        <a href="#" class="btn">مشاريع</a>
+                         <a href="#" class="btn"> أخبار  </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main_cont">
+                <div class="text">
+                    <h1>أكادمية حمزاوي</h1>
+                    <div class="img_frame im_hov">
+                        <img src="images/white-logo.png" alt="oups">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    
+        <div class="main_body">
+            <div class="main_header">
+                <h1>أكادمية حمزاوي لتعليم والبرمجة</h1>
+            </div>
+            <div id="feats">
+                <div id="feat">
+                    <h1>  <span>⚡</span> دروس متنوعة</h1>
+                </div>
+                    <div id="feat"><h1>  <span>⚡</span> دروس باللغة العربية</h1></div>
+                    <div id="feat"><h1>  <span>⚡</span> دروس بجودة عالية</h1></div>
+                    
+                   
+                </div>
+                <div id="courses_section">
+        <h1>دورات الموقع</h1>
+        <div id="courses">
+            <div class="course">
+                <img src="images/html-course.png" alt="oups">
+                <div>
+                    <h2>سلسلة دروس html</h2>
+                    <button>مشاهدة</button>
+                </div>
+                
+            </div>
+
+            <div class="course">
+                <img src="images/css-course.png" alt="oups">
+                <div>
+                    <h2>سلسلة دروس Css</h2>
+                    <button>مشاهدة</button>
+                </div>
+                
+            </div>
+            
+
+            <div class="course">
+                <img src="images/git-course.png" alt="oups">
+                <div>
+                    <h2>سلسلة دروس Get</h2>
+                    <button>مشاهدة</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <h5>جميع الحقوق محفوظة أكادمية حمزاوي 2025</h5>
+        </div>
+    
+</body>
+</html>
